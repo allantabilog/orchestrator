@@ -1,0 +1,3 @@
+module github.com/allantabilog/orchestrator
+
+go 1.23.2
