@@ -6,7 +6,7 @@ type Node struct {
 	Cores           int
 	Memory          int // this is maximum memory usable
 	MemoryAllocated int
-	Disk            int // this is maxium disk space usable
+	Disk            int // this is maxium no. of disks usable
 	DiskAllocated   int
 	Role            string
 	TaskCount       int

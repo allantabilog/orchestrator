@@ -27,8 +27,8 @@ type Task struct {
 	State         State
 	Image         string
 	CPU           float64
-	Memory        int
-	Disk          int
+	Memory        int // maximum memory usable
+	Disk          int // this is maxium no. of disks usable
 	ExposedPorts  nat.PortSet
 	PortBindings  map[string]string
 	RestartPolicy string

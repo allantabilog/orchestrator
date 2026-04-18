@@ -1,9 +1,9 @@
 package manager
 
 import (
-	"cube/task"
 	"fmt"
 
+	"github.com/allantabilog/orchestrator/task"
 	"github.com/golang-collections/collections/queue"
 	"github.com/google/uuid"
 )
