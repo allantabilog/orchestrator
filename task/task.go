@@ -3,7 +3,6 @@ package task
 import (
 	"time"
 
-	"github.com/docker/distribution/uuid"
 	"github.com/docker/go-connections/nat"
 	"github.com/google/uuid"
 )
@@ -37,9 +36,11 @@ type Task struct {
 	FinishTime    time.Time
 }
 
+// This is an internal object that the system
+// will use to transition tasks from one state to the next
 type TaskEvent struct {
 	ID        uuid.UUID
-	State     State
+	State     State // this is the target state
 	Timestamp time.Time
 	Task      Task
 }
